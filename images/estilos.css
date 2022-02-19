@@ -1,0 +1,480 @@
+/* ESTILOS GENERALES*/
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+button,
+button:focus,
+a,
+a:focus{
+    outline: 0;
+}
+.btn-primary{
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+.mt-fixed{
+    margin-top: 72px;
+}
+.testimonios {
+    color: #8d97ad;
+    font-weight: 300;
+}
+.navbar-brand img{
+    width: 140px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Karla', sans-serif;
+}
+
+h2 {
+    color:#35a82a;
+}
+
+
+.fecha{
+    background-color: #cd4c278f;
+    letter-spacing: 0.03em;
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* NAV */
+.navbar-brand{
+    transition: all 300ms ease;
+}
+a:hover.navbar-brand{
+    opacity: 0.7;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-size: 15px;
+    margin-left: 20px;
+    transition: all 300ms ease;
+}
+.navbar-light .navbar-nav a:hover.nav-link{
+    opacity: 0.7;
+}
+.navbar-collapse{
+    color: #FFF;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+.navbar-light .navbar-collapse .navbar-nav .nav-link,
+.navbar-light .navbar-toggler{
+    color: #FFF;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../images/ico_hamburgesa.svg);
+}
+a:hover.btn.btn-primary{
+    background-color: #A92205 !important;
+}
+
+
+/* HERO */
+#index{
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#index:before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(255,255,255,0) 100%);
+}
+/* boton adquiere tu entrada */
+#hero .btn-primary:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: -7px;
+    margin-right: -10px;
+    position: relative;
+    top: 2px;
+}
+
+/* COLORES */
+.bg-dark{
+    background-color: #363434 !important;
+}
+.bg-dark .btn-primary {
+    background-color: #82B431 !important;
+}
+.bg-light{
+    background-color: #f3f3f3 !important;
+}
+.btn-primary{
+    background-color:#82B431 !important;
+}
+.btn-primary:hover{
+    background-color: #554538;
+}
+.bg-light.menu-principal{
+    background-color: #FFF !important;
+}
+
+/* linea separacion */
+.hr {
+    border-top: 2px solid;
+    color: #A92205;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+  }
+/* TESTIMONIOS */
+.testimonios h1, .testimonios h2, .testimonios h3, .testimonios h4, .testimonios h5, .testimonios h6 {
+    color: #3e4555;
+}
+
+.testimonios .bg-light {
+    background-color: #FFF !important;
+}
+
+.testimonios h5 {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.testimonios .font-13 {
+    font-size: 13px;
+}
+
+.testimonios .card.card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.testimonios .card::after {
+    position: absolute;
+    bottom: -15px;
+    left: 35px;
+    content: '';
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffffff;
+}
+
+.testimonios .owl-theme .owl-dots .owl-dot.active span,
+.testimonios .owl-theme .owl-dots .owl-dot:hover span {
+    background: #188ef4;
+}
+
+.testimonios .owl-dots {
+    position: absolute;
+    left: -106.5%;
+    top: 70%;
+}
+
+.testimonios .devider {
+    height: 2px;
+    width: 40px;
+}
+
+.testimonios .bg-info {
+    background-color: #188ef4 !important;
+}
+
+.testimonios .customer-thumb img {
+    width: 60px;
+}
+.testimonios .card.card-shadow{
+    box-shadow: none;
+}
+.testimonios .card::after{
+    border-top-color: #FFF;
+}
+
+.testimonios.py-5.bg-light {
+    background-color: #FFF !important;
+}
+.testimonios{
+    background-image: url(../images/testimonios.svg);
+    background-position: center top;
+}
+
+/* PROXIMOS */
+#LaCarta .card{
+    position: relative;
+}
+#LaCarta .card .card-body{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 39px !important;
+    box-sizing: border-box;
+    z-index: 10
+}
+#LaCarta .card:after{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(255,255,255,0) 100%);
+}
+#LaCarta .card .display-4{
+    font-size: 2.7rem;
+    line-height: 1em;
+}
+
+/* HISTORIA */
+#historias .col-12{
+    position: relative;
+}
+#historias .col-12:before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(255,255,255,0) 100%);
+}
+#historias .col-12 .p-4{
+    position: relative;
+    z-index: 10
+}
+
+/* REDES */
+#redes h2 span.d-block{
+    font-size: 25px;
+    color: #A92205;
+}
+#redes .instagram_gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+#redes .instagram_gallery img{
+    width: 100%;
+}
+#redes .col-12.flex-column{
+    border: solid 3px #f3f3f3;
+}
+#redes .col-12.flex-column:last-child{
+    border-left: 0px;
+}
+
+#fbbox{
+    position: relative;
+    overflow: hidden;
+    transition: all ease 300ms;
+}
+#fbbox:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    width: 50%;
+    height: 50%;
+    background-image: url(../images/ico-fb.svg);
+    background-repeat: no-repeat;
+    transform: scale(0.5);
+    transition: all ease 500ms;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#fbbox:hover:after{
+    transform: scale(1);
+}
+#contactbox{
+    position: relative;
+    overflow: hidden;
+    transition: all ease 500ms;
+}
+#contactbox:after{
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    width: 50%;
+    height: 50%;
+    background-image: url(../images/ico-email.svg);
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+    transition: all ease 300ms;
+    opacity: 0.2;
+}
+#contactbox:hover:after{
+    right: -80px;
+    transform: rotate(-38deg);
+}
+#contactbox a:hover.btn.btn-primary{
+    background-color: #CD4C27 !important;
+}
+
+/* SWIPER */
+.swiper-pagination-bullet-active{
+    background-color: #FFF;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 30px;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #FFF;
+}
+
+/* WHATSAPP */
+#whatsapp{
+    height: 64px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    background-color: #35a82a !important;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 64px;
+    border-radius: 50%;
+    outline: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    overflow: hidden;
+    background-image: url(../images/whatsapp.svg);
+    text-indent: -9999px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 300ms ease;
+}
+a:hover#whatsapp {
+    bottom: 25px;
+}
+
+#footer ul li a{
+    margin: 0px 10px;
+    color: #FFF;
+    font-size: 21px;
+}
+#footer a{
+    color:#FFF;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .swiper-button-next:after, 
+    .swiper-container-rtl .swiper-button-prev:after,
+    .swiper-button-prev:after, 
+    .swiper-container-rtl .swiper-button-next:after{
+        font-size: 23px !important;
+    }
+    .display-4{
+        font-size: 36px !important;
+    }
+    #hero .btn-primary{
+        width: 100%;
+        font-size: 17px;
+    }
+    #proximos .card .card-body{
+        padding: 24px !important;
+    }
+}
+@media (max-width: 767px) {
+    .testimonios .owl-dots {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .swiper-button-next:after, 
+    .swiper-container-rtl .swiper-button-prev:after,
+    .swiper-button-prev:after, 
+    .swiper-container-rtl .swiper-button-next:after{
+        font-size: 28px !important;
+    }
+    .display-4{
+        font-size: 42px;
+    }
+    #redes .col-12.flex-column{
+        border: solid 3px #f3f3f3;
+    }
+    #redes .col-12.flex-column:last-child{
+        border-left: solid 3px #f3f3f3;
+    }
+}
+@media (max-width: 768px){
+    .container, .container-sm {
+        max-width: 90%;
+    }
+    .navbar-collapse{
+        margin-top: 30px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        margin-left: 0px;
+    }
+    .navbar-nav{
+        padding: 20px 0px;
+    }
+    .navbar-light .navbar-collapse .navbar-nav .nav-link{
+        position: relative;
+        text-align: left;
+    }
+}
+@media (min-width: 769px) and (max-width: 991px){
+    .container, .container-sm {
+        max-width: 90%;
+    }
+}
+@media (min-width: 769px){
+    .jumbotron{
+        height: 70vh;
+    }
+}
+
+
+@media screen and (max-width:700px){
+
+    .hr{ 
+      margin-left: 150px;
+      margin-right: 150px;
+      padding-top:5px;
+  
+    }
+    
+  
+  }
+  
+  
+  @media screen and (max-width:450px){
+  
+    .hr{ 
+      margin-left: 75px;
+      margin-right: 75px;
+      padding-top:3px;
+  
+    }
+
+  
+  }
